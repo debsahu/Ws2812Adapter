@@ -162,6 +162,14 @@ void Ws2812Adapter::setUseBuffer(bool newUseBuffer) {
         clearBuffer();
 }
 
+uint8_t* getPixels() {
+    return buffer;
+}
+
+size_t getPixelSize() {
+    return bufferSize;
+}
+
 
 
 

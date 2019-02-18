@@ -56,6 +56,10 @@ public:
     void show(uint16_t numPixels, Ws2812PixelFunction cb);
 
     void setUseBuffer(bool newUseBuffer);
+    
+    uint8_t* getPixels();
+    
+    size_t getPixelSize();
 
 private:
     bool setBuffer(size_t size);
